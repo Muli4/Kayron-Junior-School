@@ -468,31 +468,31 @@ ul
     color: #00bcd4;
   }
   .contact-form
-  {
+{
     width: 40%;
     padding: 40px;
     background: #002651;
     border-radius: 20px;
-  }
+}
   .contact-form h2
-  {
+{
     font-size: 30px;
     font-weight: 500;
     color: #ffff;
-  }
+}
   .contact-form
-  {
+{
     color: #fff;
-  }
+}
   .contact-form .inputbox
-  {
+{
     position: relative;
     width: 100%;
     margin-top: 10px;
-  }
+}
   .contact-form .inputbox input,
   .contact-form .inputbox textarea
-  {
+{
     width: 100%;
     padding: 5px 10px 5px 5px;
     font-size: 16px;
@@ -500,8 +500,8 @@ ul
     border: 2px solid #f1f1f1;
     border-radius: 10px;
    outline: none;
-  }
-  .contact-map
+}
+.contact-map
 {
   justify-content: center;
   align-items: center;
