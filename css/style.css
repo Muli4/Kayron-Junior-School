@@ -501,6 +501,30 @@ ul
     border-radius: 10px;
    outline: none;
   }
+  .contact-map
+{
+  justify-content: center;
+  align-items: center;
+}
+.contact-map iframe
+{
+  background: #002651;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  padding: 30px 40px;
+  margin-left: 33%;
+}
+
+.map h2
+{
+  font-size: 36px;
+  font-weight: 500;
+  color: #00abf0;
+  text-align: center;
+}
   /*  login form  */
   .body
 {
@@ -662,9 +686,8 @@ ul
     .card{
         width: 100%;
     }
-    .contact
-    {
-      padding: 50px 100px;
+    .contact{
+      margin-top: 50px;
     }
     .contact-us {
       flex-direction: row;
@@ -677,6 +700,15 @@ ul
   .contact-form{
     width: 1200px;
     padding: 30px 40px;
+  }
+  .contact-map h2{
+    text-align: center;
+  }
+  .contact-map iframe{
+    margin-left: 6%;
+    padding: 30px 34px;
+    width: 85%;
+    height: 85%;
   }
     .footerNav ul
     {
