@@ -176,6 +176,7 @@ ul
     position: relative;
     margin: 0 auto;
     margin-bottom: 30px;
+    margin-top: 15vh;
 }
   
   .carousel 
@@ -468,31 +469,31 @@ ul
     color: #00bcd4;
   }
   .contact-form
-{
+  {
     width: 40%;
     padding: 40px;
     background: #002651;
     border-radius: 20px;
-}
+  }
   .contact-form h2
-{
+  {
     font-size: 30px;
     font-weight: 500;
     color: #ffff;
-}
+  }
   .contact-form
-{
+  {
     color: #fff;
-}
+  }
   .contact-form .inputbox
-{
+  {
     position: relative;
     width: 100%;
     margin-top: 10px;
-}
+  }
   .contact-form .inputbox input,
   .contact-form .inputbox textarea
-{
+  {
     width: 100%;
     padding: 5px 10px 5px 5px;
     font-size: 16px;
@@ -500,8 +501,8 @@ ul
     border: 2px solid #f1f1f1;
     border-radius: 10px;
    outline: none;
-}
-.contact-map
+  }
+  .contact-map
 {
   justify-content: center;
   align-items: center;
@@ -524,6 +525,56 @@ ul
   font-weight: 500;
   color: #00abf0;
   text-align: center;
+}
+/*  gallery page  */
+.im-grid
+{
+  margin-top: 15vh;
+}
+.im-grid h2
+{
+  font-size: 26px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.zoom-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.zoom-image {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
 }
   /*  login form  */
   .body
@@ -710,14 +761,30 @@ ul
     width: 85%;
     height: 85%;
   }
-    .footerNav ul
-    {
-        flex-direction: column;
-    }
-    .footerNav ul li
-    {
-        width: 100%;
-        text-align: center;
-        margin: 10px;
-    }
+  .image-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer{
+    width: 100%;
+  }
+  .socialIcons a i{
+    font-size: 12px;
+  }
+  .socialIcons a{
+    border-radius: 50%;
+    font-size: 12px;
+  }
+    .footerNav ul{
+    flex-direction: column;
+  }
+    .footerNav ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
 }
