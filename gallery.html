@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-......" crossorigin="anonymous">
+    <link href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xjZq2jf3vzsFoXGrBmBuX6XA/oSMsdPBhNf/52LJd8eRE83b3FgjWxT3LVpC8AkGYHEFvQ7UuNlB4yytET7i1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--header section-->
+    <header class="header">
+        <a href="" class="logo">Kayron Junior School🎓</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="fas fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-xmark" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="#">ABOUT</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+        <a href="login.html" class="btn-box">Login</a>
+     </header>
+     <!--  image grids  -->
+     <div class="im-grid">
+        <h2>Some of Our Captured Moments</h2>
+    <div class="image-grid">
+        <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+        </a>
+        <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+          <a href="photos/dark4.jpg" data-lightbox="image-set" data-title="Image 1">
+            <img src="photos/dark4.jpg" alt="Image 1" onclick="zoomImage('path/to/your/dark4.jpg', 'Image 1')">
+          </a>
+      </div>
+      <div class="zoom-overlay" onclick="closeZoom()">
+        <span class="close-icon" onclick="closeZoom()">&#10006;</span>
+        <img src="" alt="Zoomed Image" class="zoom-image">
+      </div>
+    </div>
+</body>
+<script>
+  function zoomImage(src, title) 
+  {
+    const zoomOverlay = document.querySelector('.zoom-overlay');
+    const zoomImage = document.querySelector('.zoom-image');
+
+    zoomImage.src = src;
+    zoomImage.alt = title;
+
+    zoomOverlay.style.display = 'flex';
+  }
+
+  function closeZoom() {
+    const zoomOverlay = document.querySelector('.zoom-overlay');
+    zoomOverlay.style.display = 'none';
+  }
+</script>
+<!--footer section-->
+<footer>
+    <div class="footerContainer">
+       <div class="socialIcons">
+           <a href=""><i class="fa-brands fa-facebook"></i></a>
+           <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+           <a href=""><i class="fa-brands fa-instagram"></i></a>
+           <a href=""><i class="fa-regular fa-envelope"></i></a>
+           <a href=""><i class="fa-solid fa-phone"></i></a>
+       </div>
+       <div class="footerNav">
+           <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="gallery.html">GALLERY</a></li>
+               <li><a href="#">ABOUT</a></li>
+               <li><a href="contact.html">CONTACT US</a></li>
+           </ul>
+       </div>
+    </div>
+    <div class="footerBottom">
+       <p>Copyright &copy;2024: Designed by <span class="designer">Maurice</span></p>
+   </div>
+   </footer>
+</html>
