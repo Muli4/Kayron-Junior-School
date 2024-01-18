@@ -689,6 +689,7 @@ ul
 }
 .testimonial-item
 {
+  margin-top: 3.5vh;
   background-color: hsl(0, 0%, 100%);
   padding: 30px;
   border-radius: 30px;
@@ -847,7 +848,7 @@ ul
     grid-template-columns: repeat(2, 1fr);
   }
   .testimonial-container {
-    height: 80vh;
+    height: auto;
   }
 
   .section-header .title {
